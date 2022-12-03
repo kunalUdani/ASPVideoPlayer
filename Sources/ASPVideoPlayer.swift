@@ -58,7 +58,7 @@ import AVFoundation
          */
         let allowBackgroundPlay: Bool
 
-        public init(videoGravity: ASPVideoPlayerView.PlayerContentMode = .aspectFit, shouldLoop: Bool = false, startPlayingWhenReady: Bool = false, controlsInitiallyHidden: Bool = false, allowBackgroundPlay: Bool = false) {
+        public init(videoGravity: ASPVideoPlayerView.PlayerContentMode = .aspectFit, shouldLoop: Bool = false, startPlayingWhenReady: Bool = true, controlsInitiallyHidden: Bool = true, allowBackgroundPlay: Bool = false) {
             self.videoGravity = videoGravity
             self.shouldLoop = shouldLoop
             self.startPlayingWhenReady = startPlayingWhenReady
@@ -67,7 +67,7 @@ import AVFoundation
         }
 
         public static func `default`() -> Configuration {
-            return Configuration(videoGravity: .aspectFit, shouldLoop: false, startPlayingWhenReady: false, controlsInitiallyHidden: false)
+            return Configuration(videoGravity: .aspectFit, shouldLoop: false, startPlayingWhenReady: true, controlsInitiallyHidden: true)
         }
     }
 
