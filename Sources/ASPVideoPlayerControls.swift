@@ -478,8 +478,8 @@ open class ASPBasicControls: UIView, VideoPlayerControls, VideoPlayerSeekControl
         
         constraintsArray.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[resizeButton(==24)]", options: [], metrics: nil, views: viewsDictionary))
         constraintsArray.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[progressSlider(==80)]-6-|", options: [], metrics: nil, views: viewsDictionary))
-        constraintsArray.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[currentTimeLabel(==40)]-3-|", options: [], metrics: nil, views: viewsDictionary))
-        constraintsArray.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[lengthLabel(==40)]-3-|", options: [], metrics: nil, views: viewsDictionary))
+        constraintsArray.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[currentTimeLabel(==80)]-3-|", options: [], metrics: nil, views: viewsDictionary))
+        constraintsArray.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:[lengthLabel(==80)]-3-|", options: [], metrics: nil, views: viewsDictionary))
 
         addConstraints(constraintsArray)
     }
